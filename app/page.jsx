@@ -1,5 +1,5 @@
 export default function Home() {
   return (
-    <h1>Home</h1>
+    <img src="/public/u4ria.png" alt="" />
   );
 }
