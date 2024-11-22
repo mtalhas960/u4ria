@@ -16,11 +16,11 @@ export const metadata = {
     type: 'website',
     title: 'U4RIA - Wellness App for Mind, Body, and Soul',
     description: 'Discover U4RIA, the ultimate app designed for your mind, body, and soul. Explore meditation, affirmations, gratitude and more to elevate your well-being.',
-    url: 'https://u4riahub.com/',
+    url: 'https://u4ria.vercel.app/',
     siteName: 'U4RIAHUB',
     images: [
       {
-        url: 'https://u4riahub.com/wp-content/uploads/2024/09/U4ria-Complete-file-2-1.ai-2.png',
+        url: '/public/u4ria.png',
         width: 800,
         height: 800,
         alt: 'U4RIA',
@@ -34,10 +34,10 @@ export const metadata = {
     description: 'Discover U4RIA, the ultimate app designed for your mind, body, and soul. Explore meditation, affirmations, gratitude and more to elevate your well-being.',
     site: '@U4riaApp',
     creator: '@U4riaApp',
-    images: ['https://u4riahub.com/wp-content/uploads/2024/09/U4ria-Complete-file-2-1.ai-2.png'],
+    images: ['/public/u4ria.png'],
   },
   alternates: {
-    canonical: 'https://u4riahub.com/',
+    canonical: 'https://u4ria.vercel.app/',
   },
 };
 
