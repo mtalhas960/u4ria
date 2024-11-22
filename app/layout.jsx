@@ -20,7 +20,7 @@ export const metadata = {
     siteName: 'U4RIAHUB',
     images: [
       {
-        url: '/public/u4ria.png',
+        url: '/u4ria.png',
         width: 800,
         height: 800,
         alt: 'U4RIA',
@@ -34,7 +34,7 @@ export const metadata = {
     description: 'Discover U4RIA, the ultimate app designed for your mind, body, and soul. Explore meditation, affirmations, gratitude and more to elevate your well-being.',
     site: '@U4riaApp',
     creator: '@U4riaApp',
-    images: ['/public/u4ria.png'],
+    images: ['/u4ria.png'],
   },
   alternates: {
     canonical: 'https://u4ria.vercel.app/',

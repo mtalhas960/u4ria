@@ -1,5 +1,6 @@
+import Image from "next/image";
 export default function Home() {
   return (
-    <img src="/public/u4ria.png" alt="" />
+    <Image src='/u4ria.png' width={500} height={500} alt="Image"/>
   );
 }
