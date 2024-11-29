@@ -1,0 +1,122 @@
+/*
+* ----------------------------------------------------------------------------------------
+* 03.Header CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+/* main navBar */
+.nav-logo img {
+    width: 80px;
+}
+
+.navbar a {
+    font-weight: 600;
+    color: #FFF;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar a.p-0::before {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    left: -100%;
+    height: 3px;
+    width: 100%;
+    background: #FFF !important;
+    transition: all 0.3s ease;
+}
+
+.navbar a.p-0.active::before,
+.navbar a.p-0:hover::before {
+    left: 0%;
+}
+
+.navbar a.p-0.active,
+.navbar a.p-0:hover {
+    color: #FFF !important;
+}
+
+.navbar button {
+    display: none;
+    padding: 7px 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #FFF;
+}
+
+/* Side Navbar */
+aside .nav-logo{
+    padding-bottom: 12px;
+}
+
+aside .navbar-brand img{
+    width: 70px;
+}
+
+aside #sideNav {
+    width: 280px;
+    height: 100vh;
+    left: -355px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 12px 20px 12px 10px;
+    z-index: 9999;
+    background-color: #124049;
+}
+
+aside .nav-logo button {
+    padding: 5px 8px;
+    background-color: transparent;
+    color: #FFF;
+    border: none;
+    border-radius: 10px;
+}
+
+aside a {
+    color: #FFF;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+aside a.active,
+aside a:hover {
+    color: #1141BE !important;
+}
+
+aside li {
+    padding: 12px 0px 12px 10px;
+}
+
+@media (max-width: 991px) {
+    .navbar .container-fluid .navbar-collapse {
+        display: none !important;
+    }
+
+    .navbar .container-fluid button {
+        display: block;
+    }
+
+    #sideNav button,
+    #sideNav a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-logo img {
+        width: 70px;
+    }
+
+    .navbar .hover1 {
+        display: none;
+    }
+
+    #sideNav button,
+    #sideNav a {
+        font-size: 16px;
+    }
+}

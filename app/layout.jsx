@@ -1,13 +1,31 @@
 import localFont from "next/font/local";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Analytics } from "@vercel/analytics/react"
+import 'easymde/dist/easymde.min.css'
 
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
+const amsterdam = localFont({
+  src: "./fonts/amsterdam.ttf",
+  variable: "--font-amsterdam",
+  weight: "100 900",
+});
+
+const metropolis = localFont({
+  src: [
+    {
+      path: "./fonts/Metropolis/Metropolis-ExtraBold.woff",
+      weight: "800 900",
+    },
+    {
+      path: "./fonts/Metropolis/Metropolis-Bold.woff",
+      weight: "600 700",
+    },
+    {
+      path: "./fonts/Metropolis/Metropolis-Regular.woff",
+      weight: "100 500",
+    },
+  ],
+  variable: "--font-metropolis",
+});
 
 export const metadata = {
   title: 'U4RIA - Wellness App for Mind, Body, and Soul',
@@ -46,10 +64,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${amsterdam.variable} ${metropolis.variable}`}>
         {children}
-        <SpeedInsights />
-        <Analytics />
       </body>
     </html>
   );
