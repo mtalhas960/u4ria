@@ -173,6 +173,7 @@ h1 {
     line-height: 60px;
     font-weight: 900;
     font-family: var(--font-metropolis);
+    color: #FFF;
 }
 
 h2 {

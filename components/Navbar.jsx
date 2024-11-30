@@ -1,9 +1,11 @@
 'use client'
 import Link from 'next/link';
+import { usePathname } from 'next/navigation'
 import React, { useState, useEffect } from 'react';
 import { RiMenuLine, RiCloseLargeLine } from "@remixicon/react";
 
 const Navbar = () => {
+  const pathname = usePathname();
   const [isAsideOpen, setIsAsideOpen] = useState(false);
 
   useEffect(() => {
@@ -42,32 +44,32 @@ const Navbar = () => {
               <div className="collapse navbar-collapse">
                 <ul className="navbar-nav d-flex justify-content-center align-items-center gap-2 gap-xl-3">
                   <li className="nav-item px-2">
-                    <Link className="nav-link p-0 pb-1" href="/" >
+                    <Link className={`nav-link p-0 pb-1${pathname === '/' ? ' active' : ""}`} href="/" >
                       HOME
                     </Link>
                   </li>
                   <li className="nav-item px-2">
-                    <Link className="nav-link p-0 pb-1" href="/features" >
+                    <Link className={`nav-link p-0 pb-1${pathname.includes('/features') ? ' active' : ""}`} href="/features" >
                       FEATURES
                     </Link>
                   </li>
                   <li className="nav-item px-2">
-                    <Link className="nav-link p-0 pb-1" href="/pricing" >
+                    <Link className={`nav-link p-0 pb-1${pathname.includes('/pricing') ? ' active' : ""}`} href="/pricing" >
                       PRICING
                     </Link>
                   </li>
                   <li className="nav-item px-2">
-                    <Link className="nav-link p-0 pb-1" href="/blogs" >
+                    <Link className={`nav-link p-0 pb-1${pathname.includes('/blogs') ? ' active' : ""}`} href="/blogs" >
                       BLOGS
                     </Link>
                   </li>
                   <li className="nav-item px-2">
-                    <Link className="nav-link p-0 pb-1" href="/retreats" >
+                    <Link className={`nav-link p-0 pb-1${pathname.includes('/retreats') ? ' active' : ""}`} href="/retreats" >
                       RETREATS
                     </Link>
                   </li>
                   <li className="nav-item px-2">
-                    <Link className="nav-link p-0 pb-1" href="/contact" >
+                    <Link className={`nav-link p-0 pb-1${pathname.includes('/contact') ? ' active' : ""}`} href="/contact" >
                       CONTACT
                     </Link>
                   </li>

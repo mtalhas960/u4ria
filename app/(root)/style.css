@@ -32,6 +32,8 @@
     left: 0%;
 }
 
+.navbar a.p-0:active,
+.navbar a.p-0:focus,
 .navbar a.p-0.active,
 .navbar a.p-0:hover {
     color: #FFF !important;
