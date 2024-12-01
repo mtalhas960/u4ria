@@ -137,11 +137,11 @@ aside li {
 */
 
 .Hero {
+    background-color: #252525;
     padding: 120px 0px 100px;
     background-image: url('/hero_bg.png');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     position: relative;
 }
 
@@ -232,4 +232,295 @@ aside li {
     .Hero .flex-sm-row>* {
         width: 50%;
     }
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 03.Join_Us CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.Join_Us {
+    padding: 50px 0px 70px;
+    position: relative;
+}
+
+.Join_Us h3 {
+    color: #124049;
+    font-weight: 900;
+}
+
+.Join_Us p {
+    color: #124049;
+    max-width: 830px;
+}
+
+.Join_Us img {
+    position: absolute;
+    width: 200px;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width: 1199px) {
+    .Join_Us p {
+        max-width: 630px;
+    }
+
+    .Join_Us img {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .Join_Us img {
+        top: 0;
+        transform: translateY(-30%);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .Join_Us {
+        padding: 0px 0px 50px;
+    }
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04.Welcome CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.Welcome {
+    background-color: #252525;
+    background-image: url('/bg_leaves.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #FFF;
+    position: relative;
+}
+
+.Welcome::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.Welcome h3 {
+    font-weight: 900;
+}
+
+.Welcome .d-flex {
+    padding: 100px 0px;
+}
+
+.Welcome figure {
+    padding-left: 50px;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.Welcome img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+@media screen and (max-width: 991px) {
+    .Welcome .d-flex {
+        padding: 70px 0px;
+    }
+
+    .Welcome figure {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .Welcome .d-flex {
+        padding: 50px 0px;
+    }
+
+    .Welcome .position-absolute {
+        position: relative !important;
+    }
+
+    .Welcome figure {
+        padding-left: 0px;
+        width: 100%;
+    }
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 05.Features CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.Features {
+    padding: 70px 0px;
+}
+
+.Features h1,
+.Features h5 {
+    color: #124049;
+    font-weight: 900;
+}
+
+.Features p {
+    color: #124049;
+    max-width: 830px;
+}
+
+.Features img {
+    max-width: 300px;
+}
+
+.Features .position-sticky {
+    top: 12px;
+}
+
+@media screen and (max-width: 1199px) {
+    .Features p {
+        max-width: 630px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .Features {
+        padding: 50px 0px;
+    }
+
+    .Features p {
+        max-width: 100%;
+    }
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 06.CTA CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.CTA img {
+    min-height: 300px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 07.Testimonial CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 08.Partnership CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.Partnership {
+    padding: 70px 0px;
+}
+
+.Partnership h1,
+.Partnership p {
+    color: #124049;
+}
+
+@media screen and (max-width: 991px) {
+    .Partnership {
+        padding: 50px 0px 70px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .Partnership {
+        padding: 50px 0px;
+    }
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 09.Slogan CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.Slogan {
+    padding: 70px 0px;
+    background-color: #252525;
+    background-image: url('/bg_leaves.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #FFF;
+    position: relative;
+}
+
+.Slogan::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.Slogan h5{
+    color: #FFF;
+}
+
+.Slogan h2 {
+    font-family: var(--font-amsterdam);
+    color: #FFD350;
+    line-height: 85px;
+}
+
+.Slogan img{
+    width: 100px;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 10.Footer CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+footer{
+    background: #124049;
+    color: #FFF;
+}
+
+footer img{
+    width: 100px;
+}
+
+footer h4{
+    color: #FFF;
+}
+
+footer h6 {
+    font-family: var(--font-amsterdam);
+    line-height: 50px;
+}
+
+footer a{
+    color: #FFF;
+    transition: all 0.3s ease;
+    font-weight: 700;
+}
+
+footer a:hover{
+    color: #0f987a;
 }

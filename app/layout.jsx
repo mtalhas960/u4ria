@@ -22,7 +22,11 @@ const metropolis = localFont({
     },
     {
       path: "./fonts/Metropolis/Metropolis-Medium.woff",
-      weight: "100 500",
+      weight: "500",
+    },
+    {
+      path: "./fonts/Metropolis/Metropolis-Regular.woff",
+      weight: "100 400",
     },
   ],
   variable: "--font-metropolis",

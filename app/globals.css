@@ -104,7 +104,6 @@ body {
     font-size: 100%;
     line-height: 1;
     scroll-behavior: smooth;
-    background: #252525;
 }
 
 ol,
@@ -158,6 +157,11 @@ label {
 
 iframe {
     width: 100%;
+}
+
+::selection{
+    background: #124049;
+    color: #FFF;
 }
 
 .font_amsterdam {
@@ -253,8 +257,38 @@ button {
     background: #124049;
     border: 1px solid #124049;
     color: #FFF !important;
-    padding: 15px 30px;
+}
+
+.hover2{
+    display: inline-block;
+    background: transparent;
+    border: 2px solid #124049;
+    color: #124049;
+    padding: 12px 30px;
     border-radius: 30px;
+    transition: all 0.3s ease;
+    width: max-content;
+}
+
+.hover2:hover{
+    background: #124049;
+    color: #FFF;
+}
+
+.hover3{
+    display: inline-block;
+    background: transparent;
+    border: 2px solid #FFF;
+    color: #FFF;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    width: max-content;
+}
+
+.hover3:hover{
+    background: #FFF;
+    color: #124049;
 }
 
 @media screen and (min-width:1240px) {
