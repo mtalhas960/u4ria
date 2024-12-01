@@ -89,7 +89,7 @@ const Navbar = () => {
           <div id="sideNav" className='position-fixed top-0' style={{ left: isAsideOpen ? '0px' : '-355px' }}>
             <div className="d-flex nav-logo justify-content-between align-items-baseline w-100">
               <figure className="navbar-brand">
-                <Link href="/">
+                <Link onClick={closeAside} href="/">
                   <figure>
                     <img src="/logo.png" alt="logo" />
                   </figure>
@@ -101,32 +101,32 @@ const Navbar = () => {
             </div>
             <ul>
               <li className="nav-item">
-                <Link href='/'>
+                <Link onClick={closeAside} href='/'>
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href='/'>
+                <Link onClick={closeAside} href='/features'>
                   FEATURES
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href='/'>
+                <Link onClick={closeAside} href='/pricing'>
                   PRICING
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href='/'>
+                <Link onClick={closeAside} href='/blogs'>
                   BLOGS
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href='/'>
+                <Link onClick={closeAside} href='/retreats'>
                   RETREATS
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href='/'>
+                <Link onClick={closeAside} href='/contact'>
                   CONTACTS
                 </Link>
               </li>

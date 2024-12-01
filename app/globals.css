@@ -173,7 +173,6 @@ h1 {
     line-height: 60px;
     font-weight: 900;
     font-family: var(--font-metropolis);
-    color: #FFF;
 }
 
 h2 {
@@ -212,15 +211,16 @@ h6 {
 }
 
 p {
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
     font-family: var(--font-metropolis);
+    font-weight: 400;
+    letter-spacing: -0.5px;
 }
 
 .p2 {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 a {
@@ -241,14 +241,17 @@ button {
 .hover1{
     display: inline-block;
     background: #FFF;
+    border: 1px solid #FFF;
     color: #124049 !important;
     padding: 15px 30px;
     border-radius: 30px;
     transition: all 0.3s ease;
+    width: max-content;
 }
 
 .hover1:hover{
     background: #124049;
+    border: 1px solid #124049;
     color: #FFF !important;
     padding: 15px 30px;
     border-radius: 30px;

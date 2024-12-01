@@ -1,3 +1,13 @@
+export const offer = {
+    name: 'offer',
+    type: 'document',
+    title: 'Offer Modal',
+    fields: [
+        { name: 'title', type: 'string', title: 'Title' },
+        { name: 'description', type: 'text', title: 'Description' },
+        { name: 'image', type: 'image', title: 'App Demo Image' },
+    ],
+};
 export const hero = {
     name: 'hero',
     type: 'document',

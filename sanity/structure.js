@@ -9,6 +9,14 @@ export const structure = (S) =>
             .title('Site Content')
             .items([
               S.listItem()
+                .title('Offer Modal')
+                .child(
+                  S.editor()
+                    .id('offer')
+                    .schemaType('offer')
+                    .documentId('singleton-offer')
+                ),
+              S.listItem()
                 .title('Hero Section')
                 .child(
                   S.editor()

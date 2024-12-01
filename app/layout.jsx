@@ -1,7 +1,8 @@
 import localFont from "next/font/local";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./globals.css";
 import 'easymde/dist/easymde.min.css'
+import { SanityLive } from "@/sanity/lib/live";
+import "./globals.css";
 
 const amsterdam = localFont({
   src: "./fonts/amsterdam.ttf",
@@ -20,7 +21,7 @@ const metropolis = localFont({
       weight: "600 700",
     },
     {
-      path: "./fonts/Metropolis/Metropolis-Regular.woff",
+      path: "./fonts/Metropolis/Metropolis-Medium.woff",
       weight: "100 500",
     },
   ],
@@ -40,7 +41,7 @@ export const metadata = {
     siteName: 'U4RIAHUB',
     images: [
       {
-        url: '/u4ria.png',
+        url: 'https://u4ria.vercel.app/u4ria.png',
         width: 800,
         height: 800,
         alt: 'U4RIA',
@@ -66,6 +67,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${amsterdam.variable} ${metropolis.variable}`}>
         {children}
+        <SanityLive />
       </body>
     </html>
   );
