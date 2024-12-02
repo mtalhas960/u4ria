@@ -43,15 +43,6 @@ export const metadata = {
     description: 'Discover U4RIA, the ultimate app designed for your mind, body, and soul. Explore meditation, affirmations, gratitude and more to elevate your well-being.',
     url: 'https://u4ria.vercel.app/',
     siteName: 'U4RIAHUB',
-    images: [
-      {
-        url: 'https://u4ria.vercel.app/u4ria.png',
-        width: 800,
-        height: 800,
-        alt: 'U4RIA',
-        type: 'image/png',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
@@ -59,7 +50,6 @@ export const metadata = {
     description: 'Discover U4RIA, the ultimate app designed for your mind, body, and soul. Explore meditation, affirmations, gratitude and more to elevate your well-being.',
     site: '@U4riaApp',
     creator: '@U4riaApp',
-    images: ['/u4ria.png'],
   },
   alternates: {
     canonical: 'https://u4ria.vercel.app/',
