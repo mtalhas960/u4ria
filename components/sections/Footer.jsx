@@ -1,6 +1,8 @@
 import { RiFacebookFill, RiInstagramLine, RiLinkedinFill, RiMailLine, RiTiktokFill, RiTwitterXFill, RiYoutubeFill } from "@remixicon/react"
 import Link from "next/link"
 import SubscribeForm from "./SubscribeForm"
+import logo from "@/public/logo.png"
+import Image from "next/image"
 
 const Footer = () => {
   return (
@@ -10,7 +12,7 @@ const Footer = () => {
           <div className="col-md-4 text-center text-md-start">
             <Link href='/'>
               <figure>
-                <img src="/logo.png" alt="logo" />
+                <Image src={logo} alt="logo" />
               </figure>
               <h4 className="py-4">U4RIA</h4>
             </Link>

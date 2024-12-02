@@ -1,5 +1,7 @@
 import { sanityFetch } from "@/sanity/lib/live";
 import { CONTENT_QUERY } from '@/sanity/lib/queries';
+import Image from "next/image";
+import imgSrc from "@/public/features_phone.png";
 
 export default async function Features() {
     const { data: featuresData } = await sanityFetch({ query: CONTENT_QUERY, params: { sectionId: 'singleton-feature' } });
@@ -24,7 +26,7 @@ export default async function Features() {
                     </div>
                     <div className="col-md-4">
                         <figure className="position-sticky d-flex justify-content-center">
-                            <img className="w-100" src="/features_phone.png" alt="appDemo" />
+                            <Image className="w-100" src={imgSrc} width={300} height={595} alt="appDemo" />
                         </figure>
                     </div>
                     <div className="col-md-4 ps-md-0 py-md-3">

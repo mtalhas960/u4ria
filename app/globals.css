@@ -159,6 +159,10 @@ iframe {
     width: 100%;
 }
 
+img{
+    height: unset;
+}
+
 ::selection{
     background: #124049;
     color: #FFF;

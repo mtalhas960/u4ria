@@ -1,12 +1,26 @@
 import { sanityFetch } from "@/sanity/lib/live";
 import { CONTENT_QUERY } from '@/sanity/lib/queries';
 import { RiArrowRightCircleFill, RiMoonLine } from "@remixicon/react";
+import Image from "next/image";
+import phone from "@/public/hero_phone.png";
+import apple from "@/public/apple.jpg";
+import play from "@/public/play.jpeg";
+import bgImg from "@/public/hero_bg.png";
 
 export default async function Hero() {
   const { data: heroData } = await sanityFetch({ query: CONTENT_QUERY, params: { sectionId: 'singleton-hero' } });
 
   return (
     <section className='Hero'>
+      <Image
+        src={bgImg}
+        alt=""
+        layout="fill"
+        objectFit="cover"
+        priority
+        quality={90}
+        className="rounded-0 z-0 pe-none"
+      />
       <div className="container position-relative z-3">
         <div className="row row-gap-5">
           <div className="col-lg-6">
@@ -27,18 +41,18 @@ export default async function Hero() {
               <div className="d-flex flex-column flex-sm-row gap-4">
                 <a href={heroData.buttonUrl}>
                   <figure>
-                    <img className="w-100" src="/apple.webp" alt="appleButton" />
+                    <Image className="w-100" src={apple} alt="appleButton" />
                   </figure>
                 </a>
                 <figure>
-                  <img className="w-100" src="/play.jpeg" alt="playButton" />
+                  <Image className="w-100" src={play} alt="playButton" />
                 </figure>
               </div>
             </div>
           </div>
           <div className="col-lg-6">
             <figure className='d-flex h-100 justify-content-lg-end justify-content-center align-items-center'>
-              <img className="app_demo" src="/hero_phone.png" alt="appDemo" />
+              <Image className="app_demo" src={phone} alt="appDemo" />
             </figure>
           </div>
         </div>

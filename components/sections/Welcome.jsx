@@ -1,11 +1,23 @@
 import { sanityFetch } from "@/sanity/lib/live";
 import { CONTENT_QUERY } from '@/sanity/lib/queries';
+import Image from "next/image";
+import imgSrc from "@/public/welcome.png";
+import bgImg from "@/public/bg_leaves.jpg";
+
 
 export default async function Welcome() {
     const { data: welcomeData } = await sanityFetch({ query: CONTENT_QUERY, params: { sectionId: 'singleton-welcome' } });
 
     return (
         <section className='Welcome'>
+            <Image
+                src={bgImg}
+                alt=""
+                layout="fill"
+                objectFit="cover"
+                priority
+                className="z-0 pe-none"
+            />
             <div className="container-lg">
                 <div className="row">
                     <div className="col-md-6 position-relative z-3">
@@ -20,7 +32,7 @@ export default async function Welcome() {
                     </div>
                     <div className="col-md-6 p-0">
                         <figure className="position-absolute z-3">
-                            <img src="/welcome.png" alt="welcome" />
+                            <Image src={imgSrc} alt="welcome" />
                         </figure>
                     </div>
                 </div>

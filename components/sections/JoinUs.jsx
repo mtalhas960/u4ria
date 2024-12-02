@@ -1,5 +1,7 @@
 import { sanityFetch } from "@/sanity/lib/live";
 import { CONTENT_QUERY } from '@/sanity/lib/queries';
+import Image from "next/image";
+import leaves from "@/public/leaves.png";
 
 export default async function JoinUs() {
     const { data: joinData } = await sanityFetch({ query: CONTENT_QUERY, params: { sectionId: 'singleton-join' } });
@@ -14,7 +16,7 @@ export default async function JoinUs() {
                         <a className="hover2" href={joinData.buttonUrl} target="_blank">{joinData.buttonText}</a>
                     </div>
                 </div>
-                <img className="d-none d-md-block" src="/leaves.png" alt="leaves" />
+                <Image className="d-none d-md-block" src={leaves} alt="leaves" />
             </div>
         </section>
     )

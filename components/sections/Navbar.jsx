@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation'
 import React, { useState, useEffect } from 'react';
 import { RiMenuLine, RiCloseLargeLine } from "@remixicon/react";
+import Image from 'next/image';
+import logo from '@/public/logo.png';
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -37,7 +39,7 @@ const Navbar = () => {
           <div className="container-fluid align-items-center gap-4">
             <Link className="nav-logo" href="/">
               <figure>
-                <img src="/logo.png" alt="logo" />
+                <Image src={logo} alt="logo" />
               </figure>
             </Link>
             <div className="d-flex gap-3 gap-xl-4">
@@ -91,7 +93,7 @@ const Navbar = () => {
               <figure className="navbar-brand">
                 <Link onClick={closeAside} href="/">
                   <figure>
-                    <img src="/logo.png" alt="logo" />
+                    <Image src={logo} alt="logo" />
                   </figure>
                 </Link>
               </figure>
